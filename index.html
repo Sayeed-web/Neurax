@@ -3,315 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nreurax Browser - AI-Powered Enterprise Browser</title>
-    <meta name="description" content="Next-generation browser with AI agents, 50+ automation actions, and enterprise-grade security">
-    <link rel="stylesheet" href="css/lavaveil.min.css">
+    <title>NeuraX Browser - 13 AI Agents. One Browser.</title>
+    <meta name="description" content="Industry-leading AI browser with 13 specialized agents, RAG memory, self-evolution, and 20+ AI tools.">
+    <link rel="icon" type="image/png" href="../img/logo.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="lv-dark" data-theme="dark">
-    <!-- Theme Toggle -->
-    <div class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
-        <svg class="lv-w-6 lv-h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-        </svg>
-    </div>
-    
-    <!-- Particles Background -->
-    <div class="particles" id="particles"></div>
-    <!-- Hero Section -->
-    <section class="hero">
-        <nav class="lv-navbar glass">
-            <div class="lv-container">
-                <div class="lv-flex lv-items-center lv-justify-between">
-                    <div class="logo">
-                        <h1 class="lv-text-2xl lv-font-bold gradient-text">Nreurax</h1>
-                    </div>
-                    <div class="nav-links lv-hidden md:lv-flex lv-gap-6">
-                        <a href="#features" class="lv-text-sm">Features</a>
-                        <a href="#download" class="lv-text-sm">Download</a>
-                        <a href="#projects" class="lv-text-sm">Projects</a>
-                        <a href="#about" class="lv-text-sm">About</a>
-                    </div>
-                    <button class="lv-btn lv-btn-primary lv-btn-sm" onclick="scrollToDownload()">Get Started</button>
+<body data-theme="dark">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <img src="../img/logo.png" alt="NeuraX">
+                    <span>NeuraX</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#agents">AI Agents</a>
+                    <a href="#download">Download</a>
+                </div>
+                <div style="display: flex; gap: 0.5rem; align-items: center;">
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                    <button class="theme-toggle" onclick="toggleTheme()">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <div class="lv-container hero-content">
-            <div class="lv-text-center">
-                <h1 class="lv-text-5xl md:lv-text-7xl lv-font-bold lv-mb-6 gradient-text">
-                    AI-Powered Browser
-                </h1>
-                <p class="lv-text-xl md:lv-text-2xl lv-mb-8 lv-text-gray-300">
-                    Enterprise automation with 50+ actions, intelligent agents, and human-level task execution
-                </p>
-                <div class="lv-flex lv-gap-4 lv-justify-center lv-flex-wrap">
-                    <button class="lv-btn lv-btn-primary lv-btn-lg" onclick="scrollToDownload()">
-                        <svg class="lv-w-5 lv-h-5 lv-mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-                        </svg>
-                        Download Now
-                    </button>
-                    <a href="#features" class="lv-btn lv-btn-outline lv-btn-lg">Learn More</a>
-                </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#features">Features</a>
+        <a href="#agents">AI Agents</a>
+        <a href="#download">Download</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <img src="../img/logo.png" alt="NeuraX Browser" class="hero-logo">
+            <h1>AI-Powered Browser with Multi-Agent Intelligence</h1>
+            <p>Built with React 19.2, Vite 6.2, Google Gemini AI, and Electron. Features 13 specialized AI agents, RAG memory system, real-time collaboration, and enterprise-grade security.</p>
+            <p>Powered by @google/genai, lucide-react, TypeScript, and Tailwind CSS. The world's first browser where AI agents work together for YOU.</p>
+            <div class="hero-buttons">
+                <a href="#download" class="btn btn-primary">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width: 16px; height: 16px;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                    </svg>
+                    Download Now
+                </a>
+                <a href="#features" class="btn btn-secondary">Explore Features</a>
+            </div>
+            <div class="trust-badges">
+                <span>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                    Military-Grade Security
+                </span>
+                <span>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                    Lightning Fast
+                </span>
+                <span>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                    </svg>
+                    Trusted by Developers
+                </span>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="lv-py-20">
-        <div class="lv-container">
-            <h2 class="lv-text-4xl lv-font-bold lv-text-center lv-mb-12 gradient-text">Powerful Features</h2>
-            <div class="lv-grid lv-grid-cols-1 md:lv-grid-cols-2 lg:lv-grid-cols-3 lv-gap-6">
-                <div class="feature-card glass">
-                    <div class="icon-wrapper">
-                        <svg class="lv-w-8 lv-h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <!-- Features -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industry-Leading AI Capabilities</h2>
+                <p>No competitor has this. Not Chrome. Not Arc. Not anyone.</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Multi-Agent Orchestration</h3>
+                    <p>13 specialized AI agents powered by Google Gemini. AgentService, ProactiveAgent, and MultiAgentOrchestrator coordinate tasks with human-in-the-loop approval system.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
                         </svg>
                     </div>
-                    <h3 class="lv-text-xl lv-font-bold lv-mb-3">AI-Driven Automation</h3>
-                    <p class="lv-text-gray-400">Intelligent agents handle complex 20-step tasks automatically with human-level understanding</p>
+                    <h3>Self-Evolution System</h3>
+                    <p>SelfEvolutionService learns from interactions. NLPService processes natural language. AnalyticsService tracks behavior patterns for continuous improvement.</p>
                 </div>
-
-                <div class="feature-card glass">
-                    <div class="icon-wrapper">
-                        <svg class="lv-w-8 lv-h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
                         </svg>
                     </div>
-                    <h3 class="lv-text-xl lv-font-bold lv-mb-3">50+ Browser Actions</h3>
-                    <p class="lv-text-gray-400">Complete action library: click, type, scroll, upload, download, extract, verify, and more</p>
+                    <h3>RAG Memory System</h3>
+                    <p>RAGService with 768-dimensional embeddings. BrowserStorage persists agent memory. Semantic search retrieves context from browsing history instantly.</p>
                 </div>
-
-                <div class="feature-card glass">
-                    <div class="icon-wrapper">
-                        <svg class="lv-w-8 lv-h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3>AI Tools & Services</h3>
+                    <p>MediaService for image/video generation. AutomationOrchestrator for workflows. AgentTools for web scraping, code execution, and API integration.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
                     </div>
-                    <h3 class="lv-text-xl lv-font-bold lv-mb-3">Enterprise Security</h3>
-                    <p class="lv-text-gray-400">Audit logging, approval workflows, and session management for enterprise environments</p>
+                    <h3>Enterprise Security</h3>
+                    <p>SecurityService with real-time threat detection. PrivacyService for data protection. EnterpriseBookmarkSecurity with AES-256-GCM encryption and ApprovalModal for human oversight.</p>
                 </div>
-
-                <div class="feature-card glass">
-                    <div class="icon-wrapper">
-                        <svg class="lv-w-8 lv-h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
-                    <h3 class="lv-text-xl lv-font-bold lv-mb-3">Intelligent Recovery</h3>
-                    <p class="lv-text-gray-400">5 recovery strategies with exponential backoff, retry logic, and alternative paths</p>
-                </div>
-
-                <div class="feature-card glass">
-                    <div class="icon-wrapper">
-                        <svg class="lv-w-8 lv-h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
-                        </svg>
-                    </div>
-                    <h3 class="lv-text-xl lv-font-bold lv-mb-3">Session Persistence</h3>
-                    <p class="lv-text-gray-400">Save authentication, cookies, and localStorage for seamless multi-session workflows</p>
-                </div>
-
-                <div class="feature-card glass">
-                    <div class="icon-wrapper">
-                        <svg class="lv-w-8 lv-h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-                        </svg>
-                    </div>
-                    <h3 class="lv-text-xl lv-font-bold lv-mb-3">Chrome DevTools Protocol</h3>
-                    <p class="lv-text-gray-400">Real browser automation using CDP - no fake or simulated actions</p>
+                    <h3>Professional Features</h3>
+                    <p>AdminDashboard for management. ReportingService for analytics. SyncService for cross-device sync. BookmarkSharingService for team collaboration. DevToolsPanel with Chrome-level debugging.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="lv-py-20 stats-section">
-        <div class="lv-container">
-            <div class="lv-grid lv-grid-cols-2 md:lv-grid-cols-4 lv-gap-8">
-                <div class="stat-card glass lv-text-center">
-                    <div class="lv-text-4xl lv-font-bold gradient-text lv-mb-2">50+</div>
-                    <div class="lv-text-gray-400">Browser Actions</div>
+    <!-- AI Agents -->
+    <section id="agents" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Your AI Dream Team</h2>
+                <p>13 specialized agents working together to supercharge your productivity</p>
+            </div>
+            <div class="grid grid-4">
+                <div class="card agent-card">
+                    <div class="agent-avatar">
+                        <img src="../img/bill-gates.png" alt="Bill Gates">
+                    </div>
+                    <h3>Bill Gates</h3>
+                    <p>Strategy & Productivity</p>
                 </div>
-                <div class="stat-card glass lv-text-center">
-                    <div class="lv-text-4xl lv-font-bold gradient-text lv-mb-2">98%</div>
-                    <div class="lv-text-gray-400">Success Rate</div>
+                <div class="card agent-card">
+                    <div class="agent-avatar">
+                        <img src="../img/elon-musk.png" alt="Elon Musk">
+                    </div>
+                    <h3>Elon Musk</h3>
+                    <p>Innovation & Physics</p>
                 </div>
-                <div class="stat-card glass lv-text-center">
-                    <div class="lv-text-4xl lv-font-bold gradient-text lv-mb-2">20</div>
-                    <div class="lv-text-gray-400">Max Task Steps</div>
+                <div class="card agent-card">
+                    <div class="agent-avatar">
+                        <img src="../img/steve-jobs.png" alt="Steve Jobs">
+                    </div>
+                    <h3>Steve Jobs</h3>
+                    <p>Design & UX</p>
                 </div>
-                <div class="stat-card glass lv-text-center">
-                    <div class="lv-text-4xl lv-font-bold gradient-text lv-mb-2">5</div>
-                    <div class="lv-text-gray-400">Recovery Strategies</div>
+                <div class="card agent-card">
+                    <div class="agent-avatar">
+                        <img src="../img/sundar-pichai.png" alt="Sundar Pichai">
+                    </div>
+                    <h3>Sundar Pichai</h3>
+                    <p>AI & Scale</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="lv-py-20">
-        <div class="lv-container">
-            <h2 class="lv-text-4xl lv-font-bold lv-text-center lv-mb-4 gradient-text">Download Nreurax</h2>
-            <p class="lv-text-center lv-text-gray-400 lv-mb-12">Available for Windows, macOS, and Linux</p>
-            <div class="lv-grid lv-grid-cols-1 md:lv-grid-cols-3 lv-gap-6">
-                <div class="download-card glass">
-                    <svg class="lv-w-16 lv-h-16 lv-mx-auto lv-mb-4" fill="currentColor" viewBox="0 0 24 24">
+    <!-- Stats -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="card stat-card">
+                    <div class="stat-value">13</div>
+                    <div class="stat-label">AI Agents</div>
+                </div>
+                <div class="card stat-card">
+                    <div class="stat-value">React 19.2</div>
+                    <div class="stat-label">Latest Framework</div>
+                </div>
+                <div class="card stat-card">
+                    <div class="stat-value">Vite 6.2</div>
+                    <div class="stat-label">Build Tool</div>
+                </div>
+                <div class="card stat-card">
+                    <div class="stat-value">Electron</div>
+                    <div class="stat-label">Desktop App</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Download NeuraX</h2>
+                <p>Available for Windows, macOS, and Linux</p>
+            </div>
+            <div class="grid">
+                <div class="card download-card">
+                    <svg fill="currentColor" viewBox="0 0 24 24">
                         <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
                     </svg>
-                    <h3 class="lv-text-2xl lv-font-bold lv-mb-4">Windows</h3>
-                    <p class="lv-text-gray-400 lv-mb-6">Windows 10/11 (64-bit)</p>
-                    <button class="lv-btn lv-btn-primary lv-w-full" onclick="download('windows')">
-                        <svg class="lv-w-5 lv-h-5 lv-mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-                        </svg>
-                        Download .exe
-                    </button>
+                    <h3>Windows</h3>
+                    <p>Windows 10/11 (64-bit)</p>
+                    <button class="btn btn-primary" onclick="download('windows')">Download .exe</button>
                 </div>
-
-                <div class="download-card glass">
-                    <svg class="lv-w-16 lv-h-16 lv-mx-auto lv-mb-4" fill="currentColor" viewBox="0 0 24 24">
+                <div class="card download-card">
+                    <svg fill="currentColor" viewBox="0 0 24 24">
                         <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                     </svg>
-                    <h3 class="lv-text-2xl lv-font-bold lv-mb-4">macOS</h3>
-                    <p class="lv-text-gray-400 lv-mb-6">macOS 10.15+ (Intel & Apple Silicon)</p>
-                    <button class="lv-btn lv-btn-primary lv-w-full" onclick="download('mac')">
-                        <svg class="lv-w-5 lv-h-5 lv-mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-                        </svg>
-                        Download .dmg
-                    </button>
+                    <h3>macOS</h3>
+                    <p>macOS 10.15+ (Intel & Apple Silicon)</p>
+                    <button class="btn btn-primary" onclick="download('mac')">Download .dmg</button>
                 </div>
-
-                <div class="download-card glass">
-                    <svg class="lv-w-16 lv-h-16 lv-mx-auto lv-mb-4" fill="currentColor" viewBox="0 0 24 24">
+                <div class="card download-card">
+                    <svg fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12.504 0c-.155 0-.315.008-.48.021-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.84-.415 1.917-.331 2.942.256 3.075 1.916 6.020 4.284 7.927 1.163.936 2.448 1.271 3.834 1.271 1.47 0 2.906-.339 4.154-1.007 2.501-1.338 3.947-3.662 4.325-6.67.214-1.707-.054-3.188-.54-4.466-.5-1.312-1.081-2.22-1.642-3.034-.563-.815-1.195-1.577-1.792-2.35-.597-.773-1.16-1.558-1.642-2.35-.482-.792-.885-1.577-1.195-2.35-.31-.773-.54-1.558-.642-2.35-.102-.792-.155-1.577-.155-2.35 0-.773.053-1.558.155-2.35.102-.792.332-1.577.642-2.35.31-.773.713-1.558 1.195-2.35.482-.792 1.045-1.577 1.642-2.35.597-.773 1.229-1.535 1.792-2.35.563-.815 1.142-1.723 1.642-3.034.486-1.278.754-2.759.54-4.466-.378-3.008-1.824-5.332-4.325-6.67C15.41.339 13.974 0 12.504 0z"/>
                     </svg>
-                    <h3 class="lv-text-2xl lv-font-bold lv-mb-4">Linux</h3>
-                    <p class="lv-text-gray-400 lv-mb-6">Ubuntu 20.04+ / Debian / Fedora</p>
-                    <button class="lv-btn lv-btn-primary lv-w-full" onclick="download('linux')">
-                        <svg class="lv-w-5 lv-h-5 lv-mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-                        </svg>
-                        Download .AppImage
-                    </button>
+                    <h3>Linux</h3>
+                    <p>Ubuntu 20.04+ / Debian / Fedora</p>
+                    <button class="btn btn-primary" onclick="download('linux')">Download .AppImage</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="lv-py-20">
-        <div class="lv-container">
-            <h2 class="lv-text-4xl lv-font-bold lv-text-center lv-mb-12 gradient-text">Featured Projects</h2>
-            <div class="lv-grid lv-grid-cols-1 md:lv-grid-cols-2 lv-gap-6">
-                <div class="project-card glass" onclick="window.open('https://shahzada-eight.vercel.app/', '_blank')">
-                    <h3 class="lv-text-2xl lv-font-bold lv-mb-3">Afghanistan Fintech Platform</h3>
-                    <p class="lv-text-gray-400 lv-mb-4">
-                        Enterprise-grade fintech solution for Afghanistan, featuring secure payment processing, 
-                        multi-currency support, and advanced financial management tools.
-                    </p>
-                    <a href="https://shahzada-eight.vercel.app/" target="_blank" class="project-link">
-                        Visit Platform
-                        <svg class="lv-w-5 lv-h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="project-card glass" onclick="window.open('https://lavaveil-framework.vercel.app/', '_blank')">
-                    <h3 class="lv-text-2xl lv-font-bold lv-mb-3">LavaVeil Framework v1</h3>
-                    <p class="lv-text-gray-400 lv-mb-4">
-                        One of the world's strongest CSS frameworks. Modern, lightweight, and powerful utility-first 
-                        framework for building beautiful interfaces.
-                    </p>
-                    <a href="https://lavaveil-framework.vercel.app/" target="_blank" class="project-link">
-                        View Framework
-                        <svg class="lv-w-5 lv-h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="project-card glass" onclick="window.open('https://lavaveil.vercel.app/', '_blank')">
-                    <h3 class="lv-text-2xl lv-font-bold lv-mb-3">LavaVeil Framework v2</h3>
-                    <p class="lv-text-gray-400 lv-mb-4">
-                        Next generation of LavaVeil with enhanced performance, advanced components, and 
-                        revolutionary design system for modern web applications.
-                    </p>
-                    <a href="https://lavaveil.vercel.app/" target="_blank" class="project-link">
-                        Explore v2
-                        <svg class="lv-w-5 lv-h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="project-card glass">
-                    <h3 class="lv-text-2xl lv-font-bold lv-mb-3">Nreurax Browser</h3>
-                    <p class="lv-text-gray-400 lv-mb-4">
-                        AI-powered enterprise browser with 50+ automation actions, intelligent agents, 
-                        and human-level task execution capabilities.
-                    </p>
-                    <a href="#download" class="project-link">
-                        Download Now
-                        <svg class="lv-w-5 lv-h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                        </svg>
-                    </a>
-                </div>
+    <!-- About Developer -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About the Developer</h2>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="lv-py-20">
-        <div class="lv-container">
-            <div class="about-card glass">
-                <div class="lv-grid lv-grid-cols-1 lv-gap-8">
-                    <div class="developer-image">
-                        <img src="img.png" alt="Sayeed Razmenda" class="profile-img">
-                    </div>
-                    <div>
-                        <h2 class="lv-text-4xl lv-font-bold lv-mb-4 gradient-text">About the Developer</h2>
-                        <h3 class="lv-text-2xl lv-font-bold lv-mb-4">Sayeed Razmenda</h3>
-                        <p class="lv-text-gray-400 lv-mb-6">
-                            Full Stack Developer with 7 years of experience in software development, web applications, and fintech solutions. 
-                            Creator of LavaVeil Framework and Afghanistan's leading fintech platform. Specialized in enterprise-grade applications, 
-                            AI integration, Windows, Android, and cross-platform development.
-                        </p>
-                        <div class="tech-stack lv-mb-6">
-                            <h4 class="lv-text-xl lv-font-bold lv-mb-4">Technology Stack</h4>
-                            <div class="lv-flex lv-flex-wrap lv-gap-3">
-                                <span class="tech-badge">Java</span>
-                                <span class="tech-badge">Python</span>
-                                <span class="tech-badge">PHP</span>
-                                <span class="tech-badge">JavaScript</span>
-                                <span class="tech-badge">TypeScript</span>
-                                <span class="tech-badge">Node.js</span>
-                                <span class="tech-badge">React.js</span>
-                                <span class="tech-badge">Next.js</span>
-                                <span class="tech-badge">Laravel</span>
-                                <span class="tech-badge">Flutter</span>
-                                <span class="tech-badge">jQuery</span>
-                                <span class="tech-badge">Bootstrap</span>
-                                <span class="tech-badge">PostgreSQL</span>
-                                <span class="tech-badge">MySQL</span>
-                                <span class="tech-badge">SQLite</span>
-                                <span class="tech-badge">SQL Server</span>
-                                <span class="tech-badge">AI & Machine Learning</span>
-                                <span class="tech-badge">Fintech</span>
-                                <span class="tech-badge">Electron</span>
-                                <span class="tech-badge">Chrome DevTools Protocol</span>
-                            </div>
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+                        <img src="img.png" alt="Sayeed Razmenda" class="developer-img">
+                        <div style="flex: 1; min-width: 200px;">
+                            <h3 style="margin-bottom: 0.25rem;">Sayeed Razmenda</h3>
+                            <p style="margin-bottom: 0.75rem;">Full Stack Developer</p>
+                            <a href="https://www.linkedin.com/in/razmenda/" target="_blank" class="btn btn-primary" style="display: inline-flex;">Connect on LinkedIn</a>
                         </div>
-                        <a href="https://www.linkedin.com/in/razmenda/" target="_blank" class="lv-btn lv-btn-outline">
-                            <svg class="lv-w-5 lv-h-5 lv-mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                            Connect on LinkedIn
-                        </a>
+                    </div>
+                    <p>Full Stack Developer with 7 years of experience in software development, web applications, and fintech solutions. Creator of LavaVeil Framework and Afghanistan's leading fintech platform. Specialized in enterprise-grade applications, AI integration, Windows, Android, and cross-platform development.</p>
+                    <div>
+                        <h4 style="font-size: 0.9375rem; font-weight: 600; margin-bottom: 0.75rem;">Technology Stack</h4>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">React.js</span>
+                            <span class="tech-badge">Next.js</span>
+                            <span class="tech-badge">Laravel</span>
+                            <span class="tech-badge">Flutter</span>
+                            <span class="tech-badge">jQuery</span>
+                            <span class="tech-badge">Bootstrap</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">SQLite</span>
+                            <span class="tech-badge">SQL Server</span>
+                            <span class="tech-badge">AI & Machine Learning</span>
+                            <span class="tech-badge">Fintech</span>
+                            <span class="tech-badge">Electron</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -319,27 +296,12 @@
     </section>
 
     <!-- Footer -->
-    <footer class="lv-py-8 lv-border-t lv-border-gray-800">
-        <div class="lv-container">
-            <div class="lv-text-center lv-text-gray-400">
-                <p>&copy; 2024 Nreurax Browser. Built by Sayeed Razmenda.</p>
-                <p class="lv-mt-2 lv-text-sm">Enterprise AI-Powered Browser with 50+ Automation Actions</p>
-            </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 NeuraX Browser. Built by <a href="https://www.linkedin.com/in/razmenda/" target="_blank" style="color: var(--primary); text-decoration: none;">Sayeed Razmenda</a>.</p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
-    <script>
-        // Initialize particles
-        const particlesContainer = document.getElementById('particles');
-        for (let i = 0; i < 30; i++) {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.animationDelay = Math.random() * 10 + 's';
-            particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
-            particlesContainer.appendChild(particle);
-        }
-    </script>
 </body>
 </html>
