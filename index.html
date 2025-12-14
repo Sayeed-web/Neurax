@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeuraX Browser - 13 AI Agents. One Browser.</title>
     <meta name="description" content="Industry-leading AI browser with 13 specialized agents, RAG memory, self-evolution, and 20+ AI tools.">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23667eea'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-weight='bold'%3EN%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-theme="dark">
@@ -14,11 +14,7 @@
         <div class="container">
             <div class="nav-content">
                 <a href="#" class="logo">
-                    <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="100" height="100" rx="20" fill="url(#logoGrad)"/>
-                        <text x="50" y="70" font-size="60" text-anchor="middle" fill="white" font-weight="bold">N</text>
-                        <defs><linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#667eea"/><stop offset="100%" stop-color="#764ba2"/></linearGradient></defs>
-                    </svg>
+                    <img src="assets/img/logo.png" alt="NeuraX">
                     <span>NeuraX</span>
                 </a>
                 <div class="nav-links">
@@ -51,11 +47,7 @@
     <!-- Hero -->
     <section class="hero">
         <div class="container">
-            <svg width="120" height="120" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="hero-logo">
-                <rect width="100" height="100" rx="20" fill="url(#heroGrad)"/>
-                <text x="50" y="70" font-size="60" text-anchor="middle" fill="white" font-weight="bold">N</text>
-                <defs><linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#667eea"/><stop offset="100%" stop-color="#764ba2"/></linearGradient></defs>
-            </svg>
+            <img src="assets/img/logo.png" alt="NeuraX Browser" class="hero-logo">
             <h1>AI-Powered Browser with Multi-Agent Intelligence</h1>
             <p>Built with React 19.2, Vite 6.2, Google Gemini AI, and Electron. Features 13 specialized AI agents, RAG memory system, real-time collaboration, and enterprise-grade security.</p>
             <p>Powered by @google/genai, lucide-react, TypeScript, and Tailwind CSS. The world's first browser where AI agents work together for YOU.</p>
@@ -166,22 +158,30 @@
             </div>
             <div class="grid grid-4">
                 <div class="card agent-card">
-                    <div class="agent-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: bold;">BG</div>
+                    <div class="agent-avatar">
+                        <img src="assets/img/bill-gates.png" alt="Bill Gates">
+                    </div>
                     <h3>Bill Gates</h3>
                     <p>Strategy & Productivity</p>
                 </div>
                 <div class="card agent-card">
-                    <div class="agent-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: bold;">EM</div>
+                    <div class="agent-avatar">
+                        <img src="assets/img/elon-musk.png" alt="Elon Musk">
+                    </div>
                     <h3>Elon Musk</h3>
                     <p>Innovation & Physics</p>
                 </div>
                 <div class="card agent-card">
-                    <div class="agent-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: bold;">SJ</div>
+                    <div class="agent-avatar">
+                        <img src="assets/img/steve-jobs.png" alt="Steve Jobs">
+                    </div>
                     <h3>Steve Jobs</h3>
                     <p>Design & UX</p>
                 </div>
                 <div class="card agent-card">
-                    <div class="agent-avatar" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: bold;">SP</div>
+                    <div class="agent-avatar">
+                        <img src="assets/img/sundar-pichai.png" alt="Sundar Pichai">
+                    </div>
                     <h3>Sundar Pichai</h3>
                     <p>AI & Scale</p>
                 </div>
