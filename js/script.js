@@ -21,9 +21,9 @@ function toggleMobileMenu() {
 
 function download(platform) {
   const urls = {
-    windows: 'https://github.com/razmenda/neurax-browser/releases/latest/download/neurax-setup-win.exe',
-    mac: 'https://github.com/razmenda/neurax-browser/releases/latest/download/neurax-mac.dmg',
-    linux: 'https://github.com/razmenda/neurax-browser/releases/latest/download/neurax-linux.AppImage'
+    windows: 'https://github.com/Sayeed-web/Neurax/releases/latest/download/NeuraX-Browser-Setup-1.0.0.exe',
+    mac: 'https://github.com/Sayeed-web/Neurax/releases/latest/download/NeuraX-Browser-1.0.0.dmg',
+    linux: 'https://github.com/Sayeed-web/Neurax/releases/latest/download/NeuraX-Browser-1.0.0.AppImage'
   };
   
   const link = document.createElement('a');
