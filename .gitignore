@@ -1,0 +1,7 @@
+# Ignore large executable files
+*.exe
+*.dmg
+*.AppImage
+public/*.exe
+public/*.dmg
+public/*.AppImage
